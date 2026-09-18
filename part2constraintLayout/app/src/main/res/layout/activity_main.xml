@@ -23,32 +23,37 @@
         app:layout_constraintBottom_toTopOf="@id/layoutWhiteContainer"
         app:layout_constraintVertical_weight="1"/>
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layoutWhiteContainer"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvLab1"
         app:layout_constraintBottom_toTopOf="@id/tvAppText"
         app:layout_constraintVertical_weight="2">
 
         <TextView
             android:id="@+id/tvSubTitle"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="0dp"
             android:gravity="center"
             android:text="Responsive Layout 1"
             android:textColor="#000000"
             android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@id/layoutColorRow"
             app:layout_constraintVertical_weight="1"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/layoutColorRow"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvSubTitle"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintVertical_weight="1">
@@ -56,7 +61,7 @@
             <TextView
                 android:id="@+id/tvThis"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:background="#ff0000"
                 android:gravity="center"
                 android:text="This"
@@ -71,7 +76,7 @@
             <TextView
                 android:id="@+id/tvIs"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:background="#0000ff"
                 android:gravity="center"
                 android:text="is"
@@ -86,7 +91,7 @@
             <TextView
                 android:id="@+id/tvMy"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:background="#663399"
                 android:gravity="center"
                 android:text="my"
@@ -101,7 +106,7 @@
             <TextView
                 android:id="@+id/tvFirst"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:background="#ffff00"
                 android:gravity="center"
                 android:text="first"
@@ -112,28 +117,31 @@
                 app:layout_constraintStart_toEndOf="@id/tvMy"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_weight="1"/>
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/tvAppText"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
         android:text="Android Application"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layoutWhiteContainer"
         app:layout_constraintBottom_toTopOf="@id/layoutBottomButtons"
         app:layout_constraintVertical_weight="2"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layoutBottomButtons"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#F8F0F8"
         android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvAppText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_weight="1">
@@ -175,8 +183,5 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_weight="1"/>
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
