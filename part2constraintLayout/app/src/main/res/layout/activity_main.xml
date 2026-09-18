@@ -11,15 +11,18 @@
 
     <TextView
         android:id="@+id/tvLab1"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
         android:text="Lab 1"
         android:textColor="#FFFFFF"
         android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/layoutWhiteContainer"
         app:layout_constraintVertical_weight="1"/>
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layoutWhiteContainer"
@@ -137,7 +140,7 @@
 
         <Button
             android:id="@+id/btnChange"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#663399"
             android:text="Change"
@@ -149,12 +152,14 @@
             android:gravity="center"
             android:layout_margin="12dp"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnCancel"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"/>
 
         <Button
             android:id="@+id/btnCancel"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#663399"
             android:text="Cancel"
@@ -165,9 +170,12 @@
             android:minHeight="48dp"
             android:gravity="center"
             android:layout_margin="12dp"
+            app:layout_constraintStart_toEndOf="@id/btnChange"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"/>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
